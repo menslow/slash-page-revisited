@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Splash Page Revisited</title>
+
+		<meta name="description" content="A #FailNight Presentation for Oaklean III by Mister Machine">
+		<meta name="author" content="Michael Enslow">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Splash Page Revisited</h1>
+					<h3>Brought to you by <a href="http://mistermachine.com">Mister Machine</a></h3>
+					<p><img src="images/menslow.jpg" width="30%" alt="menslow"></p>
+					<p>
+						<small>Created by <a href="http://mistermachine.com">Michael Enslow</a> / <a href="http://twitter.com/menslow">@menslow</a></small>
+					</p>
+				</section>
+
+				<section data-transition="cube">
+					<h2>It's 2011</h2>
+					<p>A client at a well known fitness magazine<br />
+					sees an example of CSS3 animation...</p>
+					<img src="images/yippy.jpg" width="40%" alt="Boss man">
+					<blockquote class="fragment" cite="Awesome Client">
+						We gotta have this on our home page!
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Demo</h2>
+					<img width="464" height="500" src="images/css3-prototype.gif" alt="Should have done this">
+				</section>
+
+				<section data-transition="page">
+					<h2>We did all we could</h2>
+					<p class="fragment">We warned them.</p>
+					<p class="fragment">We showed them examples.</p>
+					<p class="fragment">We said it would cost a lot!</p>
+					<p class="fragment"><img src="images/bucks.jpg" width="40%" alt="This costs a lot"></p>
+				</section>
+
+				<section data-transition="concave">
+					<h2>We built it anyway</h2>
+					<p class="fragment">And it took a long time.</p>
+					<p class="fragment">And it cost a lot.</p>
+				</section>
+
+				<section data-transition="zoom">
+					<h2>It also...</h2>
+					<ol>
+					<li class="fragment">Performed terribly</li>
+					<li class="fragment">It wasn't mobile compatible</li>
+					<li class="fragment">Ditched within the month</li>
+					</ol>
+				</section>
+
+				<section data-transition="fade">
+					<h2>We were angry</h2>
+					<p><img src="images/angry.jpg" width="40%" alt="Angry Machine!"></p>
+					<blockquote class="fragment" cite="Angry Machine">
+						We told you this was going to happen!
+					</blockquote>
+					<blockquote class="fragment" cite="Angry Machine">
+						Why did you make us do it&#8253;
+					</blockquote>
+					<blockquote class="fragment" cite="Angry Machine">
+						Clients suck!!
+					</blockquote>
+				</section>
+
+				<section data-transition="default">
+					<h2>We were sad</h2>
+					<p><img src="images/sad.jpg" width="40%" alt="Sad Machine"></p>
+					<blockquote class="fragment" cite="Angry Machine">
+						Is this our destiny?
+					</blockquote>
+					<blockquote class="fragment" cite="Angry Machine">
+						Do we suck?
+					</blockquote>
+				</section>
+
+				<section data-transition="concave">
+					<h2>Pull yer head out</h2>
+					<h3>There's a pattern</h2>
+					<ol>
+						<li class="fragment">People love fancy stuff</li>
+						<li class="fragment">We love fancy stuff... <span class="fragment">our judgement gets clouded</span></li>
+						<li class="fragment">Fancy stuff become complex when we try to build in the application framework</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>A Lean Model</h2>
+					<ol>
+						<li class="fragment">Low-res Prototype</li>
+						<li class="fragment">User Feedback</li>
+						<li class="fragment">Medium-res Prototype</li>
+						<li class="fragment">User Feedback</li>
+						<li class="fragment">High-res Prototype (or application integration)</li>
+						<li class="fragment">User Feedback</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Site generator of the day:</h3>
+					<p>Middleman: <a href="http://middlemanapp.com/" title="Link to Middleman">http://middlemanapp.com</a></p>
+					<h2>End</h2>
+					<p><img src="images/menslow.jpg" width="30%" alt="menslow"></p>
+					<p>Michael Enslow</p>
+					<p><a href="http://mistermachine.com" title="Mister Machine">Mister Machine</a></p>
+					<p><a href="mailto:michael@mistermachine.com" title="Say ho!">michael@mistermachine.com</a></p>
+					<p><a href="http://twitter.com/menslow" title="@menslow">@menslow</a></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
